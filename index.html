@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!-- __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated -->
+<html lang="en">
+<head>
+  <title>Verge3D Web Interactive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#0048a5">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+  <script src="v3d.js"></script>
+  <script src="boyd_smart_city.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="boyd_smart_city.css">
+</head>
+
+<body>
+
+  <div id="boyd_sensor_configurator" class="boyd-sensor-configurator wf-section">
+    <div id="preloader_div" class="preloader-background">
+      <div class="company-logo">
+        <div class="c-loading-container">
+          <div class="c-loader__text">
+            <h4>Loading... <span id="loading-value">0 %</span></h4>
+          </div>
+          <div class="c-loader__bar">
+            <div id="loading-bar-inner" class="c-loader__bar-block"></div>
+            <div id="loading-bar-inner" class="c-loader__bar-block empty-block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="v3d-container">
+    <div id="fullscreen-button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
+    <div id="preloader" class="preloader-div" style="display:none">
+      <div class="preloader-container">
+        <div id="preloader_bar" class="preloader-bar"></div>
+      </div>
+    </div>
+    
+
+     <div class="main-container">
+      <div class="dynamic-text" id="internal_header_text" style="display: none;">
+      <span class="text-option" id="internal_text" style="display: none;">Industrial Automation - Internal</span>
+    </div>
+      
+      <div id="button_container" class="button-container">
+        <button id="home_button" class="navigation-button" style="display: none;">Home</button>
+        <button id="back_button" class="navigation-button" style="display: none;">Back</button>
+      </div>
+  </div>
+  
+  
+    
+    
+    
+    
+
+    <!-- <div id="clickable-div" class="clickable-div" onclick="expandDiv(this)">
+      eMobility
+      <div class="expanded-content">
+        Vehicles
+      </div>
+    </div>
+    
+
+    <div id="htmlAnnotate" class="annotation-container">
+      <div class="flipper">
+        <div class="front">
+          <img class="annotation-img" id="img" src="images/annotation_image.jpg" alt="cherry blossoms">
+          <p id="front-title" class="caption">Data Center Chassis Rack</p>
+        </div>
+        <div class="back">
+
+          <h1 id="back-title">Chassis Rack</h1>
+
+          <p id="content" class="description">customized integrated cooling systems to enable greatest power
+            density, highest performance, lowest energy footprint and lowest total operating cost!</p>
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- <div id="content_div" class="second_div">
+      <div class="rounded-border"></div>
+      <p>
+        YouTube link:
+        <br>
+        <a href="https://www.youtube.com/watch?v=Ivuy9QYLFVY" target="_blank">https://www.youtube.com/watch?v=Ivuy9QYLFVY</a>
+      </p>
+    </div> -->
+  </div>
+</body>
+
+</html>
