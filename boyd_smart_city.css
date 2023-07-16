@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.v3d-smart-city-container,
+.v3d-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.v3d-annotation-dialog {
+  border-radius: 16px;
+  /* background: #DFDFDF ; */
+  background: #dfdfdf ;
+  font-size: 14px;
+  color:#003057 ;
+  font-family: Arial;
+  font-weight: 500;
+  opacity: 1;
+  outline: 3px solid #003057;
+}
+
+
+.fullscreen-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-size: 100% 100%;
+  display: none;
+  z-index: 1;
+}
+
+.clickable-div {
+  width: 200px;
+  height: 50px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+.content {
+  margin: 0;
+}
+
+
+.fullscreen-open {
+  background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+  background-image: url('media/fullscreen_close.svg');
+}
+
+.main-container {
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+bottom: 3rem;
+left: 50%;
+transform: translateX(-50%);
+box-sizing: border-box;
+}
+
+.dynamic-text {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 10px;
+font-size: 24px;
+background-color: #003057;
+color: #ffffff;
+border-radius: 15px;
+height: 3rem;
+pointer-events: none;
+margin-right: 1rem;
+caret-color: transparent;
+outline: 3px solid #87CEEB;
+}
+
+.text-option {
+display: none;
+font-family: Arial, sans-serif;
+/* font-size: 2rem; */
+align-items: center;
+justify-content: center;
+height: 3rem;
+flex-wrap: wrap;
+}
+
+.text-option.visible {
+display: inline;
+height: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* set gap between items in the container */
+  
+}
+
+.navigation-button {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003057; /* green */
+  color: #ffffff; /* white */
+  border: none;
+  border-radius: 12px; /* rounded corners */
+  cursor: default;
+  transition: background-color 0.3s ease;
+  height: 3rem; 
+  caret-color: transparent;
+  outline: 3px solid #87CEEB; /* apply the outline here */
+}
+
+
+.navigation-button:hover {
+  background-color: #87CEEB;; /* darker green on hover */
+  cursor: pointer;
+}
+
+.vehicle-features-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: fixed;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  gap: 1rem;
+  display: none;
+  }
+
+.vehicle-feature-button {
+  padding: 8px;
+  /* font-size: 14px; */
+  background-color: #E0673C;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: default;
+  transition: background-color 0.3s ease;
+  /* min-height: 3rem; */
+  caret-color: transparent;
+  outline: 3px solid #E0673C;
+  
+}
+
+.vehicle-feature-button:hover {
+  background-color: #B55630; /* darker color on hover */
+  cursor: pointer;
+}
+
+
+.dynamic-text, .navigation-button, .vehicle-feature-button, .text-option {
+  font-size: 1.5rem; /* This is the standard font size for desktop */
+}
+
+@media only screen and (max-width: 400px) {
+  .dynamic-text, .navigation-button, .vehicle-feature-button, .text-option {
+    font-size: 1rem; /* This will only apply to devices with width 768px or less */
+  }
+}
+
+#home_button svg, #home_button svg * {
+  pointer-events: none !important;
+}
+
+
+.preloader-div {
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 50%;
+}
+
+.preloader-container {
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+width: 260px;
+height: 30px;
+margin: auto;
+border-radius: 10px;
+}
+
+.preloader-bar {
+width: 100%;
+height: 100%;
+border-radius: 6px;
+background-color: #003057;
+}
+
+.boyd-sensor-configurator {
+display: block;
+width: 100%;
+height: 100%;
+flex-direction: row;
+align-items: stretch;
+}
+
+.preloader-background {
+position: absolute;
+z-index: 60000;
+display: block;
+width: 100vw;
+height: 100vh;
+background-image: linear-gradient(180deg, #fff, #eee);
+font-family: Helveticaneuebd;
+}
+
+.company-logo {
+position: absolute;
+z-index: 9998;
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+background-image: url('./images/icons/boyd_logo.webp');
+background-position: 50% 50%;
+background-size: 15rem;
+background-repeat: no-repeat;
+}
+
+.c-loading-container {
+position: absolute;
+z-index: 9991;
+width: 80%;
+margin-top: 25%;
+flex-direction: column;
+align-items: center;
+font-family: Helvetica, sans-serif;
+}
+
+.c-loading-container._1 {
+display: block;
+background-color: #f15e5e;
+}
+
+.c-loader__text {
+position: relative;
+display: block;
+width: 100%;
+margin: auto;
+padding-bottom: 10px;
+font-family: Helvetica, sans-serif;
+color: #0c203e;
+font-size: 24px;
+text-align: center;
+}
+
+.c-loader__text-heading {
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  font-family: 'Helvetica neue', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500
+}
+
+.c-loader__bar {
+position: relative;
+display: block;
+width: 100%;
+height: 15px;
+margin: 0 auto;
+}
+
+.c-loader__bar-block {
+position: absolute;
+display: block;
+width: 100%;
+height: 1rem;
+border: 1px solid #0c203e;
+background-color: #0c2340;
+}
+
+.c-loader__bar-block.empty-block {
+background-color: transparent;
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+
+@media only screen and (max-width: 420px) {
+  
+  .c-loading-container {
+      top: 50%;
+  }
+  
+}
+
