@@ -150,7 +150,6 @@ height: 40px;
 
 .vehicle-feature-button {
   padding: 8px;
-  /* font-size: 14px; */
   background-color: #E0673C;
   color: #ffffff;
   border: none;
@@ -170,18 +169,24 @@ height: 40px;
 
 
 .dynamic-text, .navigation-button, .vehicle-feature-button, .text-option {
-  font-size: 1.5rem; /* This is the standard font size for desktop */
+  font-size: 1.5rem; 
 }
 
-@media only screen and (max-width: 400px) {
-  .dynamic-text, .navigation-button, .vehicle-feature-button, .text-option {
-    font-size: 1rem; /* This will only apply to devices with width 768px or less */
+@media only screen and (max-width: 479px) {
+  .dynamic-text, .navigation-button, .text-option {
+    font-size: 1rem; 
   }
 }
 
-#home_button svg, #home_button svg * {
-  pointer-events: none !important;
+@media only screen and (max-width: 479px) {
+  .vehicle-feature-button {
+    font-size: 0.75rem; 
+  }
 }
+
+#home_button svg, #back_button svg {
+  pointer-events: none !important;
+} 
 
 
 .preloader-div {
@@ -190,6 +195,8 @@ left: 0;
 top: 0;
 width: 100%;
 height: 50%;
+/* background-image: linear-gradient(180deg, #fff, #eee); */
+/* background-color: transparent; */
 }
 
 .preloader-container {
@@ -210,13 +217,6 @@ border-radius: 6px;
 background-color: #003057;
 }
 
-.boyd-sensor-configurator {
-display: block;
-width: 100%;
-height: 100%;
-flex-direction: row;
-align-items: stretch;
-}
 
 .preloader-background {
 position: absolute;
@@ -312,5 +312,255 @@ background-color: transparent;
       top: 50%;
   }
   
+}
+
+.popup-modal-desktop, .popup-modal-mobile {
+  display: none;
+  z-index: 99999;
+}
+
+@media screen and (max-width: 479px) {
+  .popup-modal-mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 479px) {
+  .popup-modal-desktop {
+    display: block;
+  }
+}
+
+.modal-container-desktop, .modal-container-mobile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 350;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #d6d6d6;
+    background-image: linear-gradient(324deg, #bfbfbf, #fff 78%);
+    box-shadow: 6px 8px 18px 0 #949090;
+    outline-color: #ccc;
+    outline-offset: 0;
+    outline-style: solid;
+    outline-width: 1px;
+    justify-items: center;
+    /* min-height: 50%;  */
+    /* flex-grow: 0; */
+    align-content: space-between; /* added */
+    max-height: 70%;
+    caret-color: transparent;
+    
+}
+
+
+.modal-container-mobile {
+  width: 85%;
+  height: 70%;
+  max-height: 80%;
+  max-width: 90vw;
+  flex-grow: 1;
+}
+
+.modal-title-desktop, .modal-title-mobile {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #003057;
+}
+
+.modal-title-desktop {
+  font-size: 32px;
+}
+
+.modal-title-mobile {
+  font-size: 22px;
+}
+
+.modal-header-desktop, .modal-header-mobile {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  color: #003057;
+}
+
+.how-to-button-desktop, .how-to-button-mobile {
+  display: flex;
+  align-items: center;
+}
+
+.how-to-button__icon-desktop, .how-to-button__icon-mobile {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.how-to-button__text-desktop, .how-to-button__text-mobile {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+.how-to-button__text-desktop {
+  font-size: 28px;
+}
+
+.how-to-button__text-mobile {
+  font-size: 20px;
+}
+
+.modal-close-desktop, .modal-close-mobile {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.close-button-desktop:hover , .close-button-mobile:hover  {
+  background-color: #E0673C;
+}
+
+.modal-content-desktop, .modal-content-mobile {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  flex-grow: 1;
+  height: 40%;
+  align-items: center; /* added */
+}
+
+.instructions_div-desktop, .instructions_div-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: #fff;
+  height: 100%;
+
+}
+
+.instructions_image_wrapper{
+  display: flex;
+  margin: auto;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.instructions_text_wrapper-desktop{
+  display: flex;
+  margin: auto;
+  height: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-image-desktop {
+  
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin:auto;
+}
+
+.modal-image-mobile {
+  margin-top: 1rem;
+  width: 30%;
+  min-height: 25%;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.modal-text-desktop, .modal-text-mobile {
+  height: auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1rem;
+  color: #003057;
+  /* height: 50%; */
+  /* font-size: 1.2vw; */
+  font-size: calc( 16px + (12 - 6) * (100vw - 800px) / (1600 - 800));
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: flex-start; 
+}
+
+.modal-text-mobile {
+  font-size: 3vw;
+  padding: 1rem;
+  /* height: 65%; */
+}
+
+.modal-close-btn-desktop, .modal-close-btn-mobile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 12%;
+  margin-top: auto;
+}
+
+.close-button-desktop, .close-button-mobile {
+  width: 80px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #0c2340;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  /* margin-bottom: 1rem; */
+}
+
+/* Help button */
+
+.help-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003057;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: default;
+  transition: background-color 0.3s ease;
+  height: 2rem;
+  width: 2rem;
+  font-size: 24px;
+  font-weight: bold;
+  caret-color: transparent;
+  outline: 3px solid #87CEEB;
+  z-index: 999999;
+  font-family: Verdana, Arial, sans-serif;
+
+}
+
+.help-button:hover {
+  background-color: #87CEEB;
+  cursor: pointer;
 }
 
