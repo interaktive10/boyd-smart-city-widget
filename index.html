@@ -44,7 +44,7 @@
 
   <div id="modal-desktop" class="popup-modal-desktop">
     <div class="modal-container-desktop">
-      <!-- <div class="modal-title-desktop">Energy Management Solutions</div> -->
+
       <div class="modal-header-desktop">
         <div class="how-to-button-desktop">
           <img src="./images/icons/instructions_blue.svg" loading="lazy" alt="" class="how-to-button__icon-desktop">
@@ -53,21 +53,32 @@
       </div>
       <div class="modal-content-desktop">
         <div class="instructions_div-desktop">
-          <div class="instructions_image_wrapper">
+          <div class="instructions_image_wrapper_desktop">
           <img src="./images/icons/left_click.png" loading="lazy" alt="" class="modal-image-desktop">
           </div>
-          <div class="instructions_text_wrapper-desktop">
+          <div class="instructions_text_wrapper_desktop">
           <div class="modal-text-desktop">
-            <div><strong>Left Mouse<br><br></strong></div>
-            <div>Drag to rotate the model. Click or hover over the annotations to view more details.</div>
+            <div><strong>Rotate<br><br></strong></div>
+            <div>Left click and drag to rotate the scene.</div>
           </div>
         </div> 
         </div>
         <div class="instructions_div-desktop">
-          <div class="instructions_image_wrapper">
+          <div class="instructions_image_wrapper_desktop">
+              <img src="./images/icons/click_mouse.webp" loading="lazy" alt="" class="modal-image-desktop">
+          </div>
+          <div class="instructions_text_wrapper_desktop">
+              <div class="modal-text-desktop">
+                  <div><strong>Click<br><br></strong></div>
+                  <div>Left click or hover over the annotations to view more details.</div>
+              </div>
+          </div>
+        </div>
+        <div class="instructions_div-desktop">
+          <div class="instructions_image_wrapper_desktop">
           <img src="./images/icons/scroll.png" loading="lazy" alt="" class="modal-image-desktop">
           </div>
-          <div class="instructions_text_wrapper-desktop">
+          <div class="instructions_text_wrapper_desktop">
           <div class="modal-text-desktop">
             <div><strong>Scroll<br><br></strong></div>
             <div>Scroll the mouse wheel to zoom in and out.</div>
@@ -80,7 +91,6 @@
   </div>
   <div id="modal-mobile" class="popup-modal-mobile">
     <div class="modal-container-mobile">
-        <!-- <div class="modal-title-mobile">Energy Management Solutions</div> -->
         <div class="modal-header-mobile">
             <div class="how-to-button-mobile">
                 <img src="./images/icons/instructions_blue.svg" loading="lazy" alt="" class="how-to-button__icon-mobile">
@@ -89,22 +99,32 @@
         </div>
         <div class="modal-content-mobile">
             <div class="instructions_div-mobile">
-                <div class="instructions_image_wrapper">
+                <div class="instructions_image_wrapper_mobile">
                     <img src="./images/icons/rotate.webp" loading="lazy" alt="" class="modal-image-mobile">
                 </div>
-                <div class="instructions_text_wrapper-desktop">
+                <div class="instructions_text_wrapper_mobile">
                 <div class="modal-text-mobile">
                     <div><strong>Rotate<br><br></strong></div>
-                    <div>Drag using one finger to rotate the model. Click on the annotations to view more details.</div>
+                    <div>Drag using one finger to rotate the model.</div>
                 </div>
               </div>
             </div>
-
             <div class="instructions_div-mobile">
-                <div class="instructions_image_wrapper">
+              <div class="instructions_image_wrapper_mobile">
+                  <img src="./images/icons/tap.webp" loading="lazy" alt="" class="modal-image-mobile">
+              </div>
+              <div class="instructions_text_wrapper_mobile">
+                  <div class="modal-text-mobile">
+                      <div><strong>Tap<br><br></strong></div>
+                      <div>Tap on the annotations to view more details.</div>
+                  </div>
+              </div>
+            </div>
+            <div class="instructions_div-mobile">
+                <div class="instructions_image_wrapper_mobile">
                     <img src="./images/icons/zoom.webp" loading="lazy" alt="" class="modal-image-mobile">
                 </div>
-                <div class="instructions_text_wrapper-desktop">
+                <div class="instructions_text_wrapper_mobile">
                 <div class="modal-text-mobile">
                     <div><strong>Zoom<br><br></strong></div>
                     <div>Pinch to zoom in and out.</div>
@@ -114,18 +134,28 @@
         </div>
         <div class="modal-close-btn-mobile"><a href="#" id="popup-modal-mobile-close" class="close-button-mobile">Close</a></div>
     </div>
-</div>
+  </div>
+
+ 
+
 
   
   
   
   <div id="v3d-container">
     <div id="fullscreen-button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
-    <div id="preloader" class="preloader-div" style="display:none">
+
+    <div id="preloader" class="preloader-div" style="display: none">
       <div class="preloader-container">
+        <div class="internal-loading-container">
+          <div class="internal-loader__text">
+            <h4>Loading... <span id="internal-loading-value">0 %</span></h4>
+          </div>
+        </div>
         <div id="preloader_bar" class="preloader-bar"></div>
       </div>
     </div>
+    
     
 
      <div class="main-container">
@@ -160,6 +190,16 @@
       <button id="car_outer_view_button" class="vehicle-feature-button">Car - Full View</button>
     </div>
   
+    <div id="valueStatementsModal" class="valueStatementsPopup">
+      
+
+      <div class="valueStatementsContainer">
+        <div id="value_statement_header_mobile" class="value-statement-header-mobile"></div>
+          <div class="valueStatementsContent" id="valueStatementsContentId">
+          </div>
+          <div class="modal-close-btn-mobile"><a href="#" id="valueStatementsCloseBtn" class="close-button-mobile">Close</a></div>
+      </div>
+    </div>
   
   </div>
 
