@@ -1,11 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="Init" type="InitTab" active="false" scrollx="605.8372028887152" scrolly="-66.66666666666669" scale="0.9523809523809526">
+  <tab name="Init" type="InitTab" active="false" scrollx="778.6068420410156" scrolly="-5.705913543701115" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="NsXh88gqmYWMo_B8OixM" x="-510" y="70">
       <field name="LOAD_COMP_ASSETS">TRUE</field>
       <field name="FULLSCREEN">FALSE</field>
       <field name="BKG_TRANSPARENCY">TRUE</field>
       <field name="PRESERVE_DRAW_BUF">TRUE</field>
       <field name="FADE_ANNOTATIONS">FALSE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="text_join" id="DVGf-x!3[g8s_(Yq(WW7" x="330" y="190">
+      <mutation items="3"></mutation>
+      <value name="ADD1">
+        <block type="percentage" id="0)*Q$n0,DJx8LvrXJ5?L"></block>
+      </value>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="/r%U~@Q75)}w3=VHWNn6" x="-510" y="290">
       <statement name="DO_PROGRESS">
@@ -36,7 +42,7 @@
             </shadow>
           </value>
           <next>
-            <block type="console.log" id="6{h!p6@:MaZShgp9w]o1" disabled="true">
+            <block type="console.log" id="6{h!p6@:MaZShgp9w]o1">
               <value name="VALUE">
                 <shadow type="text" id="`.`ky6Z)lfq~i0ld0AVH">
                   <field name="TEXT">Hello, Verge!</field>
@@ -93,6 +99,25 @@
                           <field name="TEXT">loading-bar-inner</field>
                         </block>
                       </value>
+                      <next>
+                        <block type="setHTMLElemStyle" id="E.CVvDFI1p}+T1IWr?:7">
+                          <field name="PROPERTY">maxWidth</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id=":ws76R[nFlgqpHrgpSgM">
+                              <field name="TEXT">100%</field>
+                            </block>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="EN%~urzq@oBwDJ$U`gmA">
+                              <field name="TEXT"></field>
+                            </shadow>
+                            <block type="text" id="Pa}Od.t]NuX,])F)Ok}O">
+                              <field name="TEXT">loading-bar-inner</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
                     </block>
                   </next>
                 </block>
@@ -122,60 +147,19 @@
       </statement>
     </block>
   </tab>
-  <tab name="Industries" type="CommonTab" active="false" scrollx="5818.590576171875" scrolly="1894.0801544189453" scale="0.9070294784580498">
+  <tab name="Industries" type="CommonTab" active="false" scrollx="4878.567710194024" scrolly="981.8021656555059" scale="0.9070294784580494">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="[nra19ow,7(%XvW4W}px">main_block_empties</variable>
-      <variable id="xcl:W67$tcd(*Vwlc$yp">inception_level</variable>
       <variable id="/Px.S/44$S:gJ+75tzEK">industry</variable>
       <variable id="!yN,}X8svI8f]zFv5=lS">main_blocks</variable>
       <variable id="7^[8y%c8F:=:`z,aA$%8">annotation_id</variable>
       <variable id="b{Tah)U*t{DWOQw-cz4j">internal_view</variable>
       <variable id="XH[wL.q!!F2I}Ij^QPU-">i</variable>
       <variable id="b8W7R[T`[a,_*Xp0s#n;">percentage</variable>
+      <variable id="xcl:W67$tcd(*Vwlc$yp">inception_level</variable>
       <variable id="zz|)Yys{{:Y3sC%wp%dE">block</variable>
     </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="setScreenScale" id="UvU-XEE,`]LB$zP-QHrq" x="-4830" y="-2230">
-      <value name="FACTOR">
-        <shadow type="math_number" id="%G|EsUV:02d:`q*c#6#e">
-          <field name="NUM">1.5</field>
-        </shadow>
-      </value>
-      <next>
-        <block type="stopAnimation" id="aSZvvvZK!Ku`Y(U7B/)(" disabled="true">
-          <value name="VALUE">
-            <shadow type="animationList" id="CT547KLeSaF[XG/YFViv">
-              <field name="FIELDNAME">&lt;none&gt;</field>
-            </shadow>
-            <block type="getAnimations" id="uz:Dmdu|1jg6D=SE+}`,">
-              <value name="OBJECTINPUT">
-                <shadow type="objectList" id="^UPhcaBiKTF-Kn4S9b[~">
-                  <field name="FIELDNAME">WAVES</field>
-                </shadow>
-                <block type="text" id="LtTj/riIDTV#~~Hma4RS">
-                  <field name="TEXT">Windmill_Wing_03</field>
-                </block>
-              </value>
-            </block>
-          </value>
-          <next>
-            <block type="procedures_callnoreturn" id="yPTJ!|}JM!a{$_FNzC(9">
-              <mutation name="show_main_annotations"></mutation>
-              <next>
-                <block type="procedures_callnoreturn" id="B#!K!X9M1W69h)r!2$nr">
-                  <mutation name="hide_navigation_buttons"></mutation>
-                  <next>
-                    <block type="procedures_callnoreturn" id="}f)Hj`wP_vBy:AIuq=g,">
-                      <mutation name="set_css_rule_main_annotaiton"></mutation>
-                    </block>
-                  </next>
-                </block>
-              </next>
-            </block>
-          </next>
-        </block>
-      </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="fsOtza,tE%df~1|=WF0l" x="-5950" y="-2030">
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="fsOtza,tE%df~1|=WF0l" x="-6410" y="-1990">
       <mutation else="1"></mutation>
       <value name="IF0">
         <block type="featureAvailable" id="iU{TbZ9Q,/C|yd4kocp;">
@@ -397,7 +381,83 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="~=aPRuorv:*:~9F%$KyA" x="-3710" y="-2050">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setScreenScale" id="UvU-XEE,`]LB$zP-QHrq" x="-5170" y="-2010">
+      <value name="FACTOR">
+        <shadow type="math_number" id="%G|EsUV:02d:`q*c#6#e">
+          <field name="NUM">1.5</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="stopAnimation" id="aSZvvvZK!Ku`Y(U7B/)(" disabled="true">
+          <value name="VALUE">
+            <shadow type="animationList" id="CT547KLeSaF[XG/YFViv">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="getAnimations" id="uz:Dmdu|1jg6D=SE+}`,">
+              <value name="OBJECTINPUT">
+                <shadow type="objectList" id="^UPhcaBiKTF-Kn4S9b[~">
+                  <field name="FIELDNAME">WAVES</field>
+                </shadow>
+                <block type="text" id="LtTj/riIDTV#~~Hma4RS">
+                  <field name="TEXT">Windmill_Wing_03</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <next>
+            <block type="procedures_callnoreturn" id="yPTJ!|}JM!a{$_FNzC(9">
+              <mutation name="show_main_annotations"></mutation>
+              <next>
+                <block type="procedures_callnoreturn" id="B#!K!X9M1W69h)r!2$nr">
+                  <mutation name="hide_navigation_buttons"></mutation>
+                  <next>
+                    <block type="procedures_callnoreturn" id="}f)Hj`wP_vBy:AIuq=g,">
+                      <mutation name="set_css_rule_main_annotaiton"></mutation>
+                      <next>
+                        <block type="setActiveCamera" id="@eba,Q=YTxGW999bw!J0">
+                          <value name="CAMERA">
+                            <shadow type="objectList" id="UN`c(}{0s6(?e|vv|b=o">
+                              <field name="FIELDNAME">Main_camera</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setCameraParam" id="/xj_r)Bh1mRw^oi@w@q,">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" type="ALLOW_PANNING"></mutation>
+                              <field name="TYPE">ALLOW_PANNING</field>
+                              <value name="ALLOW_PANNING">
+                                <shadow type="logic_boolean" id="]83elXeH3e2$C(cVN1P/">
+                                  <field name="BOOL">FALSE</field>
+                                </shadow>
+                              </value>
+                              <value name="OBJECT">
+                                <shadow type="objectList" id="#]~v7,!MzPC+futZ.69#">
+                                  <field name="FIELDNAME">Main_camera</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="variables_set" id="C{*wg25?Il-Y=b?.y6hD">
+                                  <field name="VAR" id="xcl:W67$tcd(*Vwlc$yp">inception_level</field>
+                                  <value name="VALUE">
+                                    <block type="math_number" id="mCYdi*0Aa6lz,#cq4)l$">
+                                      <field name="NUM">0</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="~=aPRuorv:*:~9F%$KyA" x="-3710" y="-1990">
       <field name="VAR" id="[nra19ow,7(%XvW4W}px">main_block_empties</field>
       <value name="VALUE">
         <block type="lists_create_with" id="cuAKcI0+(2J+_[%hxt$L">
@@ -707,7 +767,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="e*K[]sQ3/4S,/?^ac68q" x="-5070" y="-1890">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="e*K[]sQ3/4S,/?^ac68q" x="-5150" y="-1550">
       <field name="NAME">show_main_annotations</field>
       <comment pinned="false" h="80" w="160">Describe this function...</comment>
       <statement name="STACK">
@@ -1244,38 +1304,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="setActiveCamera" id="@eba,Q=YTxGW999bw!J0" x="-4830" y="-590">
-      <value name="CAMERA">
-        <shadow type="objectList" id="UN`c(}{0s6(?e|vv|b=o">
-          <field name="FIELDNAME">Main_camera</field>
-        </shadow>
-      </value>
-      <next>
-        <block type="setCameraParam" id="/xj_r)Bh1mRw^oi@w@q,">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" type="ALLOW_PANNING"></mutation>
-          <field name="TYPE">ALLOW_PANNING</field>
-          <value name="ALLOW_PANNING">
-            <shadow type="logic_boolean" id="]83elXeH3e2$C(cVN1P/">
-              <field name="BOOL">FALSE</field>
-            </shadow>
-          </value>
-          <value name="OBJECT">
-            <shadow type="objectList" id="#]~v7,!MzPC+futZ.69#">
-              <field name="FIELDNAME">Main_camera</field>
-            </shadow>
-          </value>
-        </block>
-      </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="C{*wg25?Il-Y=b?.y6hD" x="-4830" y="-490">
-      <field name="VAR" id="xcl:W67$tcd(*Vwlc$yp">inception_level</field>
-      <value name="VALUE">
-        <block type="math_number" id="mCYdi*0Aa6lz,#cq4)l$">
-          <field name="NUM">0</field>
-        </block>
-      </value>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="/CJF.Kx6yDKgD}f[)NXZ" x="-5790" y="-410">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="/CJF.Kx6yDKgD}f[)NXZ" x="-5210" y="-890">
       <mutation>
         <arg name="industry" varid="/Px.S/44$S:gJ+75tzEK"></arg>
       </mutation>
@@ -1317,6 +1346,22 @@
                               <field name="TEXT">help_button</field>
                             </shadow>
                           </value>
+                          <next>
+                            <block type="setHTMLElemStyle" id="4olkxPL@PIW7A2%t_|wI">
+                              <field name="PROPERTY">filter</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <block type="text" id="Un_{RBTH*X7)WNt)Z@MX">
+                                  <field name="TEXT">none</field>
+                                </block>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="@Ml*wsry#/TPu|,Bunab">
+                                  <field name="TEXT">boyd_company_logo</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
                         </block>
                       </next>
                     </block>
@@ -1423,7 +1468,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="7L|z6RE^0lP#TQVwV!3[" x="-4830" y="-430">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="7L|z6RE^0lP#TQVwV!3[" x="-4290" y="-910">
       <field name="NAME">go_home</field>
       <comment pinned="false" h="80" w="160">Describe this function...</comment>
       <statement name="STACK">
@@ -1537,6 +1582,22 @@
                                       <field name="TEXT">help_button</field>
                                     </shadow>
                                   </value>
+                                  <next>
+                                    <block type="setHTMLElemStyle" id="tE/HXzsYx54?MaKIq,ll">
+                                      <field name="PROPERTY">filter</field>
+                                      <field name="PARENT">FALSE</field>
+                                      <value name="VALUE">
+                                        <block type="text" id="-hv44H%_LhOB%jc`BNY2">
+                                          <field name="TEXT">none</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="xY@Q|E0D6PwhM7YN]A]Q">
+                                          <field name="TEXT">boyd_company_logo</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </next>
                                 </block>
                               </next>
                             </block>
@@ -1636,7 +1697,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Sub Industries" type="CommonTab" active="true" scrollx="1486.4825758352563" scrolly="-396.5667106903297" scale="0.676839362028687">
+  <tab name="Sub Industries" type="CommonTab" active="true" scrollx="2072.688232421875" scrolly="-1815.5367431640625" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="QIjWD5wgV.AmW?XQ1L?Y">sub_industries_annotation_ids</variable>
       <variable id=";uIoD.FSrO8=tJOmgZ2d">selected_industry</variable>
@@ -3296,6 +3357,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3333,6 +3395,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd increases compute density with high performance liquid cooling systems that maximize cooling performance and sustainability.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/ai-autonomous-compute.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;AI Autonomous Compute&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Machine Learning &amp; AI Cooling
 
+                  
                   
                   
                   
@@ -3399,6 +3462,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3415,6 +3479,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd's vacuum brazed liquid cold plates efficiently transfer heat from electronic systems generating high heat loads to existing coolant loops with high reliability.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/thermal/liquid-cooling-systems/liquid-cold-plates.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Liquid Cooling Plates&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Radar and Communications Thermals
 
+                  
                   
                   
                   
@@ -3452,6 +3517,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3475,6 +3541,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3484,6 +3551,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd's environmentally friendly, non-toxic, low density, light weight, polyimide foam designed as a high performance thermal and acoustic insulator with a uniquely wide continuous temperature range from below -325°F(-200°C) up to +572°F (+300° C)&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/engineered-materials/insulation-shielding/solimide-insulation-foams.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;SOLIMIDE® Foam&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Defense Flame Barrier Insulation
 
+                  
                   
                   
                   
@@ -3542,6 +3610,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3565,6 +3634,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Sustain reliable, efficient energy transfer with Boyd's liquid and air cooling systems that safely enable fast charging.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/battery/ev-charging.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;EV Battery Charging&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">EV Charge Station Solutions
 
+                  
                   
                   
                   
@@ -3608,6 +3678,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3616,6 +3687,7 @@
                   <field name="HIGHLIGHT_MODE">html</field>
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd’s thermal solutions cool, seal and protect energy storage with solutions that increase performance efficiency, optimize resource utilization, maximize energy recovery, and increase reliability across all systems levels.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/energy-management.html#grid-power-battery" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Grid Power Battery&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Power Storage Cooling    
+                  
                   
                   
                   
@@ -3669,6 +3741,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3679,6 +3752,7 @@
                   <comment pinned="false" h="80" w="160">Motor Drive Solutions
 
 
+                  
                   
                   
                   
@@ -3723,6 +3797,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3739,6 +3814,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd has decades of expertise in selecting skin contact materials for wide varieties of people and skin types. Materials are safe and comfortable for patient wear while being highly specialized for healthcare performance. &lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/medical-wearables.html " target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Medical Wearable Adhesives&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Stick-to-Skin
 
+                  
                   
                   
                   
@@ -3776,6 +3852,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3785,6 +3862,7 @@
                   <field name="TEXT" editor-height="4" editor-width="590.9218716847106">&lt;p&gt;Boyd’s decades of innovation in imaging cooling increases thermal density and efficiency, improves imaging system speed and accuracy while reducing energy consumption and total cost of operation. Innovative active and passive cooling technologies are right sized for the application’s thermal density challenges and serviceability.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/test-systems.html#imaging-systems " target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Test and Imaging Systems&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Medical Imagining Solutions
 
+                  
                   
                   
                   
@@ -3822,6 +3900,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3838,6 +3917,7 @@
                   <field name="TEXT" editor-height="4" editor-width="590.9218716847106">&lt;p&gt;Boyd innovates medical displays with smart touch integrated front panels and crisp clarity, rich display graphics from screens that are optimized to environments with varying light levels and sources. Durable displays are designed to be exposed to repeat sanitation processes.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/display.html#medical " target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Medical Displays + HMI&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Interactive Display Solutions
 
+                  
                   
                   
                   
@@ -4281,7 +4361,7 @@
                         </block>
                       </value>
                       <statement name="DO">
-                        <block type="controls_ifelse" id="zERLPe49N@UD7{[os{^9">
+                        <block type="controls_if" id="m+cD4s_@?sC`?{inz_X0">
                           <value name="IF0">
                             <block type="featureAvailable" id="4i7mhqvq,(H?Tw6zpFS5">
                               <field name="FEATURE">MOBILE</field>
@@ -4345,15 +4425,6 @@
                                   </next>
                                 </block>
                               </next>
-                            </block>
-                          </statement>
-                          <statement name="ELSE">
-                            <block type="console.log" id="c/D=_uu72;DV^p_W!srs">
-                              <value name="VALUE">
-                                <shadow type="text" id="TKgU~[ymAaqNX}pEkz:z">
-                                  <field name="TEXT">unable to click</field>
-                                </shadow>
-                              </value>
                             </block>
                           </statement>
                         </block>
@@ -4447,35 +4518,73 @@
                                 </block>
                               </statement>
                               <next>
-                                <block type="autoRotateCamera" id="-/74iB6uh+gjd9=g499j">
-                                  <field name="ON_OFF">OFF</field>
-                                  <value name="SPEED">
-                                    <shadow type="math_number" id="=NU.Q{%~nlL7,#=m/DXJ">
-                                      <field name="NUM">0.2</field>
-                                    </shadow>
+                                <block type="controls_if" id="T}9~DQ)J]mRI=Lt15TnE">
+                                  <value name="IF0">
+                                    <block type="logic_compare" id="Md!okn/`#0P#sq^|U~K:">
+                                      <field name="OP">EQ</field>
+                                      <value name="A">
+                                        <block type="variables_get" id="IW1%+62x^tebV{Z30M/V">
+                                          <field name="VAR" id="/t/q*Nrw]h}m%iYJj;Du">annotation_name</field>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <block type="text" id="oJH?*#=0}0mM`yAK{R:v">
+                                          <field name="TEXT">Robotics Solutions</field>
+                                        </block>
+                                      </value>
+                                    </block>
                                   </value>
-                                  <next>
-                                    <block type="openAnnotation" id="I7u.L5npG?~!qlaAD0b^">
+                                  <statement name="DO0">
+                                    <block type="pauseAnimation" id="+]ez4CVAYO2jes=8kz2c">
                                       <value name="VALUE">
-                                        <shadow type="text" id="n#/AkC*v8lkLn9~n-=d3">
-                                          <field name="TEXT">testing</field>
+                                        <shadow type="animationList" id="k0hYg%G@xrB[2f^i~(*C">
+                                          <field name="FIELDNAME">&lt;none&gt;</field>
                                         </shadow>
-                                        <block type="dictGet" id="b?c7%EQ/8O10+c33,2)5">
-                                          <value name="DICT">
-                                            <block type="variables_get" id="0^F^N7*xKB8Z(/;[GuWZ">
-                                              <field name="VAR" id="QIjWD5wgV.AmW?XQ1L?Y">sub_industries_annotation_ids</field>
-                                            </block>
-                                          </value>
-                                          <value name="KEY">
-                                            <shadow type="text" id="Y,IV#L~$s]JwMNE{dgg[">
-                                              <field name="TEXT">someKey</field>
+                                        <block type="getAnimations" id="HlyzIKuAgM}g(h#UA+,O">
+                                          <value name="OBJECTINPUT">
+                                            <shadow type="objectList" id="b0L/_{py}s;9SQz/by$q">
+                                              <field name="FIELDNAME">satellite_thermal_control</field>
                                             </shadow>
-                                            <block type="variables_get" id="t7.-T:vXo-{wXz(4Gmif">
-                                              <field name="VAR" id="/t/q*Nrw]h}m%iYJj;Du">annotation_name</field>
+                                            <block type="text" id="M7Q^a]Tzn3oiE3hQzfSu">
+                                              <field name="TEXT">Drone_Box</field>
                                             </block>
                                           </value>
                                         </block>
                                       </value>
+                                    </block>
+                                  </statement>
+                                  <next>
+                                    <block type="autoRotateCamera" id="-/74iB6uh+gjd9=g499j">
+                                      <field name="ON_OFF">OFF</field>
+                                      <value name="SPEED">
+                                        <shadow type="math_number" id="=NU.Q{%~nlL7,#=m/DXJ">
+                                          <field name="NUM">0.2</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="openAnnotation" id="I7u.L5npG?~!qlaAD0b^">
+                                          <value name="VALUE">
+                                            <shadow type="text" id="n#/AkC*v8lkLn9~n-=d3">
+                                              <field name="TEXT">testing</field>
+                                            </shadow>
+                                            <block type="dictGet" id="b?c7%EQ/8O10+c33,2)5">
+                                              <value name="DICT">
+                                                <block type="variables_get" id="0^F^N7*xKB8Z(/;[GuWZ">
+                                                  <field name="VAR" id="QIjWD5wgV.AmW?XQ1L?Y">sub_industries_annotation_ids</field>
+                                                </block>
+                                              </value>
+                                              <value name="KEY">
+                                                <shadow type="text" id="Y,IV#L~$s]JwMNE{dgg[">
+                                                  <field name="TEXT">someKey</field>
+                                                </shadow>
+                                                <block type="variables_get" id="t7.-T:vXo-{wXz(4Gmif">
+                                                  <field name="VAR" id="/t/q*Nrw]h}m%iYJj;Du">annotation_name</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </next>
                                     </block>
                                   </next>
                                 </block>
@@ -4512,7 +4621,7 @@
                       </value>
                       <statement name="DO">
                         <block type="controls_if" id="whixRt~I?f}tCwYI:LrQ">
-                          <mutation elseif="1" else="1"></mutation>
+                          <mutation elseif="2" else="1"></mutation>
                           <value name="IF0">
                             <block type="logic_compare" id="9vV@!*lrUU9cF`T]xVNM">
                               <field name="OP">EQ</field>
@@ -4555,6 +4664,50 @@
                             </block>
                           </statement>
                           <value name="IF1">
+                            <block type="logic_compare" id="5^X=jt)S28,07!R4?Ju@">
+                              <field name="OP">EQ</field>
+                              <value name="A">
+                                <block type="variables_get" id="$r8hCVqbbLTsRBDY~TpX">
+                                  <field name="VAR" id="/t/q*Nrw]h}m%iYJj;Du">annotation_name</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <block type="text" id="tm=!7/WQO$Et08~-i2/A">
+                                  <field name="TEXT">Robotics Solutions</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO1">
+                            <block type="resumeAnimation" id="20%exapE.JJvwd4ZAz)`">
+                              <value name="VALUE">
+                                <shadow type="animationList" id="V7`lax9w}qPGW|U`g1ax">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="getAnimations" id="K*|w-NKdSIkGk2uT9IbH">
+                                  <value name="OBJECTINPUT">
+                                    <shadow type="objectList" id="J*|WRc[qCc4:Yu0W6q5Q">
+                                      <field name="FIELDNAME">satellite_thermal_control</field>
+                                    </shadow>
+                                    <block type="text" id=";O/[}x4;3P`P.Ba:~;ZN">
+                                      <field name="TEXT">Drone_Box</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="autoRotateCamera" id="prZe1MxA8{f@l94b6TE$">
+                                  <field name="ON_OFF">ON</field>
+                                  <value name="SPEED">
+                                    <shadow type="math_number" id="Cge~2LTd.{J=bBD,z,Xb">
+                                      <field name="NUM">0.2</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <value name="IF2">
                             <block type="logic_compare" id="QW[iF,p(ZD:j;z^gySaY">
                               <field name="OP">EQ</field>
                               <value name="A">
@@ -4569,7 +4722,7 @@
                               </value>
                             </block>
                           </value>
-                          <statement name="DO1">
+                          <statement name="DO2">
                             <block type="autoRotateCamera" id="NeW[MFb|_6WLSIdkEdfP">
                               <field name="ON_OFF">OFF</field>
                               <value name="SPEED">
@@ -5836,7 +5989,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Internal" type="CommonTab" active="false" scrollx="1836.100790885399" scrolly="890.1742176341007" scale="0.6139132535407591">
+  <tab name="Internal" type="CommonTab" active="false" scrollx="1288.5568033647103" scrolly="420.9400841637257" scale="0.7920954138633566">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="smT]l+~X*Mnmm|[|fWRf">interior_scene</variable>
       <variable id="o![69TtkfZ1V]A8aK^F^">internal_text_content</variable>
@@ -5954,142 +6107,158 @@
                             <block type="procedures_callnoreturn" id="`q0K;+JD?QpXNvlGury5">
                               <mutation name="endPreloader"></mutation>
                               <next>
-                                <block type="autoRotateCamera" id="6vxss])zNH]nL;6)+iwc">
-                                  <field name="ON_OFF">ON</field>
-                                  <value name="SPEED">
-                                    <shadow type="math_number" id="AL/q@#qvDAkV)l*{vjb[">
-                                      <field name="NUM">0.1</field>
+                                <block type="setHTMLElemStyle" id="RhA.A);L%J:EwI^k$SfD">
+                                  <field name="PROPERTY">filter</field>
+                                  <field name="PARENT">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="text" id="T8$EV.qe,tvZWG%QrxPg">
+                                      <field name="TEXT">invert(1) brightness(2)</field>
+                                    </block>
+                                  </value>
+                                  <value name="ID">
+                                    <shadow type="text" id="x_yIA#do:DUyCa5@)B~n">
+                                      <field name="TEXT">boyd_company_logo</field>
                                     </shadow>
                                   </value>
                                   <next>
-                                    <block type="controls_if" id="mjCifGphvTBig`k]^^[N">
-                                      <value name="IF0">
-                                        <block type="logic_compare" id="qBkJx~un.d[eq]uc[Ktz">
-                                          <field name="OP">NEQ</field>
-                                          <value name="A">
-                                            <block type="getEventProperty" id="Xt:vJ*Y~uV)_/*GKD#Te">
-                                              <field name="PROPERTY">target.id</field>
-                                            </block>
-                                          </value>
-                                          <value name="B">
-                                            <block type="text" id="YDQuENg)+Jr]GPaMz83$">
-                                              <field name="TEXT">Vehicle Solutions</field>
-                                            </block>
-                                          </value>
-                                        </block>
+                                    <block type="autoRotateCamera" id="6vxss])zNH]nL;6)+iwc">
+                                      <field name="ON_OFF">ON</field>
+                                      <value name="SPEED">
+                                        <shadow type="math_number" id="AL/q@#qvDAkV)l*{vjb[">
+                                          <field name="NUM">0.1</field>
+                                        </shadow>
                                       </value>
-                                      <statement name="DO0">
-                                        <block type="procedures_callnoreturn" id="[m=~UG{.W}T1p-x7g!bU">
-                                          <mutation name="get_sub_industries_list">
-                                            <arg name="industry"></arg>
-                                          </mutation>
-                                          <value name="ARG0">
-                                            <block type="getEventProperty" id=";NSvCP{8aq/V(RhKta0`">
-                                              <field name="PROPERTY">target.id</field>
-                                            </block>
-                                          </value>
-                                          <next>
-                                            <block type="controls_forEach" id="-[b(@^dBF=.vaOxnhCpw">
-                                              <field name="VAR" id="!Y6!W|uIb7.mZ@wv-Y^t">k</field>
-                                              <value name="LIST">
-                                                <block type="variables_get" id="8mu^}V{G9Begez~:y:NF">
-                                                  <field name="VAR" id="_rHH;A!R}5=AQ$oPYkUj">sub_industries</field>
+                                      <next>
+                                        <block type="controls_if" id="mjCifGphvTBig`k]^^[N">
+                                          <value name="IF0">
+                                            <block type="logic_compare" id="qBkJx~un.d[eq]uc[Ktz">
+                                              <field name="OP">NEQ</field>
+                                              <value name="A">
+                                                <block type="getEventProperty" id="Xt:vJ*Y~uV)_/*GKD#Te">
+                                                  <field name="PROPERTY">target.id</field>
                                                 </block>
                                               </value>
-                                              <statement name="DO">
-                                                <block type="procedures_callnoreturn" id="zrAK9Fu=,+e*:x)zI(cA">
-                                                  <mutation name="add_annotation_sub_industries">
-                                                    <arg name="annotation_name"></arg>
-                                                    <arg name="object_name"></arg>
-                                                  </mutation>
-                                                  <value name="ARG0">
-                                                    <block type="variables_get" id="OcjMd0(jF)$M4{Wt(Pk%">
-                                                      <field name="VAR" id="!Y6!W|uIb7.mZ@wv-Y^t">k</field>
+                                              <value name="B">
+                                                <block type="text" id="YDQuENg)+Jr]GPaMz83$">
+                                                  <field name="TEXT">Vehicle Solutions</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </value>
+                                          <statement name="DO0">
+                                            <block type="procedures_callnoreturn" id="[m=~UG{.W}T1p-x7g!bU">
+                                              <mutation name="get_sub_industries_list">
+                                                <arg name="industry"></arg>
+                                              </mutation>
+                                              <value name="ARG0">
+                                                <block type="getEventProperty" id=";NSvCP{8aq/V(RhKta0`">
+                                                  <field name="PROPERTY">target.id</field>
+                                                </block>
+                                              </value>
+                                              <next>
+                                                <block type="controls_forEach" id="-[b(@^dBF=.vaOxnhCpw">
+                                                  <field name="VAR" id="!Y6!W|uIb7.mZ@wv-Y^t">k</field>
+                                                  <value name="LIST">
+                                                    <block type="variables_get" id="8mu^}V{G9Begez~:y:NF">
+                                                      <field name="VAR" id="_rHH;A!R}5=AQ$oPYkUj">sub_industries</field>
                                                     </block>
                                                   </value>
-                                                  <value name="ARG1">
-                                                    <block type="dictGet" id="yAUe8:2~?esZruqN.SCY">
-                                                      <value name="DICT">
-                                                        <block type="variables_get" id="/L/bRf;yVYbmGz}}{7R,">
-                                                          <field name="VAR" id="D38n$Wo+prF4_Sx1G%/[">sub_industries_objects</field>
-                                                        </block>
-                                                      </value>
-                                                      <value name="KEY">
-                                                        <shadow type="text" id="LKacB=@4?Y;.ci:7u2Tv">
-                                                          <field name="TEXT">someKey</field>
-                                                        </shadow>
-                                                        <block type="variables_get" id="wc%%c;e;~c,|.1n6]0pD">
+                                                  <statement name="DO">
+                                                    <block type="procedures_callnoreturn" id="zrAK9Fu=,+e*:x)zI(cA">
+                                                      <mutation name="add_annotation_sub_industries">
+                                                        <arg name="annotation_name"></arg>
+                                                        <arg name="object_name"></arg>
+                                                      </mutation>
+                                                      <value name="ARG0">
+                                                        <block type="variables_get" id="OcjMd0(jF)$M4{Wt(Pk%">
                                                           <field name="VAR" id="!Y6!W|uIb7.mZ@wv-Y^t">k</field>
                                                         </block>
                                                       </value>
+                                                      <value name="ARG1">
+                                                        <block type="dictGet" id="yAUe8:2~?esZruqN.SCY">
+                                                          <value name="DICT">
+                                                            <block type="variables_get" id="/L/bRf;yVYbmGz}}{7R,">
+                                                              <field name="VAR" id="D38n$Wo+prF4_Sx1G%/[">sub_industries_objects</field>
+                                                            </block>
+                                                          </value>
+                                                          <value name="KEY">
+                                                            <shadow type="text" id="LKacB=@4?Y;.ci:7u2Tv">
+                                                              <field name="TEXT">someKey</field>
+                                                            </shadow>
+                                                            <block type="variables_get" id="wc%%c;e;~c,|.1n6]0pD">
+                                                              <field name="VAR" id="!Y6!W|uIb7.mZ@wv-Y^t">k</field>
+                                                            </block>
+                                                          </value>
+                                                        </block>
+                                                      </value>
                                                     </block>
-                                                  </value>
+                                                  </statement>
                                                 </block>
-                                              </statement>
+                                              </next>
                                             </block>
-                                          </next>
-                                        </block>
-                                      </statement>
-                                      <next>
-                                        <block type="procedures_callnoreturn" id="Ktu^L`_[2#h6!bRm0aGB">
-                                          <mutation name="show_navigation">
-                                            <arg name="internal_text_content"></arg>
-                                            <arg name="header"></arg>
-                                            <arg name="home_button"></arg>
-                                            <arg name="back_button"></arg>
-                                            <arg name="help_button"></arg>
-                                          </mutation>
-                                          <value name="ARG0">
-                                            <block type="getEventProperty" id="%pGQ1J%|]cRb9hAogg{R">
-                                              <field name="PROPERTY">target.id</field>
-                                            </block>
-                                          </value>
-                                          <value name="ARG1">
-                                            <block type="logic_boolean" id=":lOYtGYa;Dt0Vvtz{K=q">
-                                              <field name="BOOL">TRUE</field>
-                                            </block>
-                                          </value>
-                                          <value name="ARG2">
-                                            <block type="logic_boolean" id="L@1jaJXmH}1Un=?sGncS">
-                                              <field name="BOOL">TRUE</field>
-                                            </block>
-                                          </value>
-                                          <value name="ARG3">
-                                            <block type="logic_boolean" id="ULeUPNXJ2dV[9H5eKrtu">
-                                              <field name="BOOL">TRUE</field>
-                                            </block>
-                                          </value>
-                                          <value name="ARG4">
-                                            <block type="logic_boolean" id="?K%waoYVy}W68Y=NYZBS">
-                                              <field name="BOOL">TRUE</field>
-                                            </block>
-                                          </value>
+                                          </statement>
                                           <next>
-                                            <block type="procedures_callnoreturn" id="$zOi!jv50lPzblwjK/qg">
-                                              <mutation name="internal_clicks"></mutation>
+                                            <block type="procedures_callnoreturn" id="Ktu^L`_[2#h6!bRm0aGB">
+                                              <mutation name="show_navigation">
+                                                <arg name="internal_text_content"></arg>
+                                                <arg name="header"></arg>
+                                                <arg name="home_button"></arg>
+                                                <arg name="back_button"></arg>
+                                                <arg name="help_button"></arg>
+                                              </mutation>
+                                              <value name="ARG0">
+                                                <block type="getEventProperty" id="%pGQ1J%|]cRb9hAogg{R">
+                                                  <field name="PROPERTY">target.id</field>
+                                                </block>
+                                              </value>
+                                              <value name="ARG1">
+                                                <block type="logic_boolean" id=":lOYtGYa;Dt0Vvtz{K=q">
+                                                  <field name="BOOL">TRUE</field>
+                                                </block>
+                                              </value>
+                                              <value name="ARG2">
+                                                <block type="logic_boolean" id="L@1jaJXmH}1Un=?sGncS">
+                                                  <field name="BOOL">TRUE</field>
+                                                </block>
+                                              </value>
+                                              <value name="ARG3">
+                                                <block type="logic_boolean" id="ULeUPNXJ2dV[9H5eKrtu">
+                                                  <field name="BOOL">TRUE</field>
+                                                </block>
+                                              </value>
+                                              <value name="ARG4">
+                                                <block type="logic_boolean" id="?K%waoYVy}W68Y=NYZBS">
+                                                  <field name="BOOL">TRUE</field>
+                                                </block>
+                                              </value>
                                               <next>
-                                                <block type="variables_set" id="IUoZ)4aIiZ96n44z`k~B">
-                                                  <field name="VAR" id="xcl:W67$tcd(*Vwlc$yp">inception_level</field>
-                                                  <value name="VALUE">
-                                                    <block type="math_number" id="qq[wN1+=s{?4%:ZK}R=H">
-                                                      <field name="NUM">2</field>
-                                                    </block>
-                                                  </value>
+                                                <block type="procedures_callnoreturn" id="$zOi!jv50lPzblwjK/qg">
+                                                  <mutation name="internal_clicks"></mutation>
                                                   <next>
-                                                    <block type="setCameraParam" id="vQYr~{XXv|!jXbf^o;9d">
-                                                      <mutation xmlns="http://www.w3.org/1999/xhtml" type="ALLOW_PANNING"></mutation>
-                                                      <field name="TYPE">ALLOW_PANNING</field>
-                                                      <value name="ALLOW_PANNING">
-                                                        <shadow type="logic_boolean" id="S9cLlLio}$u!!uCWvL`i">
-                                                          <field name="BOOL">FALSE</field>
-                                                        </shadow>
+                                                    <block type="variables_set" id="IUoZ)4aIiZ96n44z`k~B">
+                                                      <field name="VAR" id="xcl:W67$tcd(*Vwlc$yp">inception_level</field>
+                                                      <value name="VALUE">
+                                                        <block type="math_number" id="qq[wN1+=s{?4%:ZK}R=H">
+                                                          <field name="NUM">2</field>
+                                                        </block>
                                                       </value>
-                                                      <value name="OBJECT">
-                                                        <shadow type="objectList" id="a@zHDhheV%:DVw^RD57d">
-                                                          <field name="FIELDNAME">&lt;none&gt;</field>
-                                                        </shadow>
-                                                        <block type="getActiveCamera" id="VNbG*g7u?au|:wsFe]6v"></block>
-                                                      </value>
+                                                      <next>
+                                                        <block type="setCameraParam" id="vQYr~{XXv|!jXbf^o;9d">
+                                                          <mutation xmlns="http://www.w3.org/1999/xhtml" type="ALLOW_PANNING"></mutation>
+                                                          <field name="TYPE">ALLOW_PANNING</field>
+                                                          <value name="ALLOW_PANNING">
+                                                            <shadow type="logic_boolean" id="S9cLlLio}$u!!uCWvL`i">
+                                                              <field name="BOOL">FALSE</field>
+                                                            </shadow>
+                                                          </value>
+                                                          <value name="OBJECT">
+                                                            <shadow type="objectList" id="a@zHDhheV%:DVw^RD57d">
+                                                              <field name="FIELDNAME">&lt;none&gt;</field>
+                                                            </shadow>
+                                                            <block type="getActiveCamera" id="VNbG*g7u?au|:wsFe]6v"></block>
+                                                          </value>
+                                                        </block>
+                                                      </next>
                                                     </block>
                                                   </next>
                                                 </block>
@@ -7282,7 +7451,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Scene_Preloader" type="CommonTab" active="false" scrollx="97.64493198945365" scrolly="-26.555104025810465" scale="0.8851701341936811">
+  <tab name="Scene_Preloader" type="CommonTab" active="false" scrollx="55.05764770507824" scrolly="204.66668701171875" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="b8W7R[T`[a,_*Xp0s#n;">percentage</variable>
     </variables>
@@ -7351,63 +7520,91 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="[*4F$Kt?e)GVB!Z}m=m_" x="250" y="330">
+    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="[*4F$Kt?e)GVB!Z}m=m_" x="250" y="270">
       <mutation>
         <arg name="percentage" varid="b8W7R[T`[a,_*Xp0s#n;"></arg>
       </mutation>
       <field name="NAME">updatePreloader</field>
       <comment pinned="false" h="80" w="160">Describe this function...</comment>
       <statement name="STACK">
-        <block type="setHTMLElemStyle" id="24d!o!W7_6E[D-Xf{oNY">
-          <field name="PROPERTY">width</field>
-          <field name="PARENT">FALSE</field>
+        <block type="console.log" id="^`EHN,`,,Qj[j;nU,WuD">
           <value name="VALUE">
-            <block type="text_join" id="yh;TNe2@n3/)y($G6,)B">
-              <mutation items="2"></mutation>
-              <value name="ADD0">
-                <block type="variables_get" id="YlTl-cjJl=N41,v(MhFX">
-                  <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
-                </block>
-              </value>
-              <value name="ADD1">
-                <block type="text" id="y!_rY+-Sg?!|j.$p,dC:">
-                  <field name="TEXT">%</field>
-                </block>
-              </value>
-            </block>
-          </value>
-          <value name="ID">
-            <block type="text" id="nZ9IA6nP:$|.R!B^OO_h">
-              <field name="TEXT">preloader_bar</field>
+            <shadow type="text" id="_i}WJJi5^pmzzdGk7M,/">
+              <field name="TEXT">Hello, Verge!</field>
+            </shadow>
+            <block type="variables_get" id="Oh.wY#)dDkq8!J|j93!;">
+              <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
             </block>
           </value>
           <next>
-            <block type="setHTMLElemAttribute" id="X2cD8!J4?Zm{D)pauR2d">
-              <field name="ATTRIBUTE">innerHTML</field>
+            <block type="setHTMLElemStyle" id="24d!o!W7_6E[D-Xf{oNY">
+              <field name="PROPERTY">width</field>
               <field name="PARENT">FALSE</field>
               <value name="VALUE">
-                <block type="text_join" id="_k;oj$q9bt?@LbEhoR/4">
-                  <mutation items="3"></mutation>
-                  <value name="ADD1">
-                    <block type="variables_get" id="eO^TmR|{j9z:}O{}1u!,">
+                <block type="text_join" id="yh;TNe2@n3/)y($G6,)B">
+                  <mutation items="2"></mutation>
+                  <value name="ADD0">
+                    <block type="variables_get" id="YlTl-cjJl=N41,v(MhFX">
                       <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
                     </block>
                   </value>
-                  <value name="ADD2">
-                    <block type="text" id="5^:)mb(`I@vi0^@*kKnO">
+                  <value name="ADD1">
+                    <block type="text" id="y!_rY+-Sg?!|j.$p,dC:">
                       <field name="TEXT">%</field>
                     </block>
                   </value>
                 </block>
               </value>
               <value name="ID">
-                <shadow type="text" id="{7V1V(H+z1sJRL=EZ0-|">
-                  <field name="TEXT"></field>
-                </shadow>
-                <block type="text" id=".;@j+ZAzme*FkXPFZTw1">
-                  <field name="TEXT">internal-loading-value</field>
+                <block type="text" id="nZ9IA6nP:$|.R!B^OO_h">
+                  <field name="TEXT">preloader_bar</field>
                 </block>
               </value>
+              <next>
+                <block type="setHTMLElemStyle" id="u:TPp,P}|u3Y_oM5LIMq">
+                  <field name="PROPERTY">maxWidth</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="g`6fsJs!)kRhU,T)B8v]">
+                      <field name="TEXT">100%</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <block type="text" id="P+BTtF!xpLvM`_[Jh[PP">
+                      <field name="TEXT">preloader_bar</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemAttribute" id="X2cD8!J4?Zm{D)pauR2d">
+                      <field name="ATTRIBUTE">innerHTML</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text_join" id="_k;oj$q9bt?@LbEhoR/4">
+                          <mutation items="3"></mutation>
+                          <value name="ADD1">
+                            <block type="variables_get" id="eO^TmR|{j9z:}O{}1u!,">
+                              <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
+                            </block>
+                          </value>
+                          <value name="ADD2">
+                            <block type="text" id="5^:)mb(`I@vi0^@*kKnO">
+                              <field name="TEXT">%</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="{7V1V(H+z1sJRL=EZ0-|">
+                          <field name="TEXT"></field>
+                        </shadow>
+                        <block type="text" id=".;@j+ZAzme*FkXPFZTw1">
+                          <field name="TEXT">internal-loading-value</field>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
             </block>
           </next>
         </block>
