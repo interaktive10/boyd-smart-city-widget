@@ -991,7 +991,7 @@
                 </block>
               </statement>
               <next>
-                <block type="autoRotateCamera" id="0x`Vph$Hi~sW}y4kclf$" disabled="true">
+                <block type="autoRotateCamera" id="0x`Vph$Hi~sW}y4kclf$">
                   <field name="ON_OFF">ON</field>
                   <value name="SPEED">
                     <shadow type="math_number" id="_8[[UEW`uk1Q7,]gf$jL">
