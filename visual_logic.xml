@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="Init" type="InitTab" active="false" scrollx="836.4014282226562" scrolly="-70" scale="1">
+  <tab name="Init" type="InitTab" active="true" scrollx="836.4014282226562" scrolly="-70" scale="1">
     <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="NsXh88gqmYWMo_B8OixM" x="-510" y="70">
       <field name="LOAD_COMP_ASSETS">TRUE</field>
       <field name="FULLSCREEN">FALSE</field>
@@ -102,16 +102,6 @@
                           <field name="TEXT">loading-bar-inner</field>
                         </block>
                       </value>
-                      <next>
-                        <block type="console.log" id="3FF{1AK,RcgHp8vlmBs-">
-                          <value name="VALUE">
-                            <shadow type="text" id="`.`ky6Z)lfq~i0ld0AVH">
-                              <field name="TEXT">Hello, Verge!</field>
-                            </shadow>
-                            <block type="percentage" id="S4mjqiE3vJAS%{lY*DG9"></block>
-                          </value>
-                        </block>
-                      </next>
                     </block>
                   </next>
                 </block>
@@ -141,7 +131,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Industries" type="CommonTab" active="false" scrollx="3819.6651916503906" scrolly="2018.9024963378906" scale="0.9070294784580498">
+  <tab name="Industries" type="CommonTab" active="false" scrollx="3819.6651916503906" scrolly="1931.972789115646" scale="0.9070294784580498">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="[nra19ow,7(%XvW4W}px">main_block_empties</variable>
       <variable id="/Px.S/44$S:gJ+75tzEK">industry</variable>
@@ -1632,7 +1622,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Sub Industries" type="CommonTab" active="true" scrollx="4900.11459244885" scrolly="-1648.4878702197784" scale="0.8775782159765173">
+  <tab name="Sub Industries" type="CommonTab" active="false" scrollx="4900.11459244885" scrolly="-1648.4878702197789" scale="0.8775782159765173">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id=";uIoD.FSrO8=tJOmgZ2d">selected_industry</variable>
       <variable id="QIjWD5wgV.AmW?XQ1L?Y">sub_industries_annotation_ids</variable>
@@ -3354,6 +3344,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3391,6 +3382,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd's engineered materials dampen vibration and reduce shock to protect sensitive components like electronics, batteries, and cameras.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/engineered-materials/environmental-sealing-protection/shock-noise-vibration-harshness.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Shock, Noise, and Vibration Dampening&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Aircraft Engineered Materials
 
+                  
                   
                   
                   
@@ -3453,6 +3445,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3462,6 +3455,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd’s robust land vehicle engine heat exchangers are tough against demanding use and rugged terrain environments. High temperature plate fin and brazed aluminum heat exchangers balance long lifetime, high reliability, and weight efficiency by packing more heat transfer surfaces in smaller volumes.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/thermal/liquid-cooling-systems/heat-exchangers.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Land System Heat Exchangers&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Land System Electronics Cooling
 
+                  
                   
                   
                   
@@ -3517,6 +3511,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3526,6 +3521,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd's environmentally friendly, non-toxic, low density, light weight, polyimide foam designed as a high performance thermal and acoustic insulator with a uniquely wide continuous temperature range from below -325°F(-200°C) up to +572°F (+300° C)&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/engineered-materials/insulation-shielding/solimide-insulation-foams.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;SOLIMIDE® Foam&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Defense Flame Barrier Insulation
 
+                  
                   
                   
                   
@@ -3602,6 +3598,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3625,6 +3622,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Sustain reliable, efficient energy transfer with Boyd's liquid and air cooling systems that safely enable fast charging.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/battery/ev-charging.html" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;EV Battery Charging&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">EV Charge Station Solutions
 
+                  
                   
                   
                   
@@ -3686,6 +3684,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3694,6 +3693,7 @@
                   <field name="HIGHLIGHT_MODE">html</field>
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd’s thermal solutions cool, seal and protect energy storage with solutions that increase performance efficiency, optimize resource utilization, maximize energy recovery, and increase reliability across all systems levels.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/energy-management.html#grid-power-battery" target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Grid Power Battery&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Power Storage Cooling    
+                  
                   
                   
                   
@@ -3746,6 +3746,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3756,6 +3757,7 @@
                   <comment pinned="false" h="80" w="160">Motor Drive Solutions
 
 
+                  
                   
                   
                   
@@ -3818,6 +3820,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3834,6 +3837,7 @@
                   <field name="TEXT" editor-height="6" editor-width="590.9218716847106">&lt;p&gt;Boyd has decades of expertise in selecting skin contact materials for wide varieties of people and skin types. Materials are safe and comfortable for patient wear while being highly specialized for healthcare performance. &lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/medical-wearables.html " target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Medical Wearable Adhesives&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Stick-to-Skin
 
+                  
                   
                   
                   
@@ -3889,6 +3893,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3898,6 +3903,7 @@
                   <field name="TEXT" editor-height="4" editor-width="590.9218716847106">&lt;p&gt;Boyd’s decades of innovation in imaging cooling increases thermal density and efficiency, improves imaging system speed and accuracy while reducing energy consumption and total cost of operation. Innovative active and passive cooling technologies are right sized for the application’s thermal density challenges and serviceability.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/test-systems.html#imaging-systems " target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Test and Imaging Systems&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Medical Imagining Solutions
 
+                  
                   
                   
                   
@@ -3953,6 +3959,7 @@
                   
                   
                   
+                  
                   </comment>
                 </block>
               </value>
@@ -3969,6 +3976,7 @@
                   <field name="TEXT" editor-height="4" editor-width="590.9218716847106">&lt;p&gt;Boyd innovates medical displays with smart touch integrated front panels and crisp clarity, rich display graphics from screens that are optimized to environments with varying light levels and sources. Durable displays are designed to be exposed to repeat sanitation processes.&lt;/p&gt;&amp;#10;&lt;p&gt;Learn More:&lt;/p&gt;&amp;#10;&lt;p&gt;&lt;a href="https://www.boydcorp.com/applications/display.html#medical " target="_blank" style="color: #E0673C; font-weight: bold; transition: color 0.3s ease-in-out;" onmouseover="this.style.color='#9D3C19';" onmouseout="this.style.color='#E0673C';"&gt;Medical Displays + HMI&lt;/a&gt;&lt;/p&gt;</field>
                   <comment pinned="false" h="80" w="160">Interactive Display Solutions
 
+                  
                   
                   
                   
@@ -5989,7 +5997,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Internal" type="CommonTab" active="false" scrollx="1314.036376953125" scrolly="1704.6842041015625" scale="1">
+  <tab name="Internal" type="CommonTab" active="false" scrollx="1314.036376953125" scrolly="1450" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="smT]l+~X*Mnmm|[|fWRf">interior_scene</variable>
       <variable id="o![69TtkfZ1V]A8aK^F^">internal_text_content</variable>
@@ -7451,7 +7459,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Scene_Preloader" type="CommonTab" active="false" scrollx="-143.22216796874955" scrolly="-30" scale="1">
+  <tab name="Scene_Preloader" type="CommonTab" active="false" scrollx="313.09111953092406" scrolly="231.69562026402537" scale="0.8227024747918819">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="b8W7R[T`[a,_*Xp0s#n;">percentage</variable>
     </variables>
@@ -7527,82 +7535,70 @@
       <field name="NAME">updatePreloader</field>
       <comment pinned="false" h="80" w="160">Describe this function...</comment>
       <statement name="STACK">
-        <block type="console.log" id="^`EHN,`,,Qj[j;nU,WuD">
+        <block type="setHTMLElemStyle" id="24d!o!W7_6E[D-Xf{oNY">
+          <field name="PROPERTY">width</field>
+          <field name="PARENT">FALSE</field>
           <value name="VALUE">
-            <shadow type="text" id="_i}WJJi5^pmzzdGk7M,/">
-              <field name="TEXT">Hello, Verge!</field>
-            </shadow>
-            <block type="variables_get" id="Oh.wY#)dDkq8!J|j93!;">
-              <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
+            <block type="text_join" id="yh;TNe2@n3/)y($G6,)B">
+              <mutation items="2"></mutation>
+              <value name="ADD0">
+                <block type="variables_get" id="YlTl-cjJl=N41,v(MhFX">
+                  <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
+                </block>
+              </value>
+              <value name="ADD1">
+                <block type="text" id="y!_rY+-Sg?!|j.$p,dC:">
+                  <field name="TEXT">%</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="nZ9IA6nP:$|.R!B^OO_h">
+              <field name="TEXT">preloader_bar</field>
             </block>
           </value>
           <next>
-            <block type="setHTMLElemStyle" id="24d!o!W7_6E[D-Xf{oNY">
-              <field name="PROPERTY">width</field>
+            <block type="setHTMLElemStyle" id="u:TPp,P}|u3Y_oM5LIMq">
+              <field name="PROPERTY">maxWidth</field>
               <field name="PARENT">FALSE</field>
               <value name="VALUE">
-                <block type="text_join" id="yh;TNe2@n3/)y($G6,)B">
-                  <mutation items="2"></mutation>
-                  <value name="ADD0">
-                    <block type="variables_get" id="YlTl-cjJl=N41,v(MhFX">
-                      <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
-                    </block>
-                  </value>
-                  <value name="ADD1">
-                    <block type="text" id="y!_rY+-Sg?!|j.$p,dC:">
-                      <field name="TEXT">%</field>
-                    </block>
-                  </value>
+                <block type="text" id="g`6fsJs!)kRhU,T)B8v]">
+                  <field name="TEXT">100%</field>
                 </block>
               </value>
               <value name="ID">
-                <block type="text" id="nZ9IA6nP:$|.R!B^OO_h">
+                <block type="text" id="P+BTtF!xpLvM`_[Jh[PP">
                   <field name="TEXT">preloader_bar</field>
                 </block>
               </value>
               <next>
-                <block type="setHTMLElemStyle" id="u:TPp,P}|u3Y_oM5LIMq">
-                  <field name="PROPERTY">maxWidth</field>
+                <block type="setHTMLElemAttribute" id="X2cD8!J4?Zm{D)pauR2d">
+                  <field name="ATTRIBUTE">innerHTML</field>
                   <field name="PARENT">FALSE</field>
                   <value name="VALUE">
-                    <block type="text" id="g`6fsJs!)kRhU,T)B8v]">
-                      <field name="TEXT">100%</field>
+                    <block type="text_join" id="_k;oj$q9bt?@LbEhoR/4">
+                      <mutation items="3"></mutation>
+                      <value name="ADD1">
+                        <block type="variables_get" id="eO^TmR|{j9z:}O{}1u!,">
+                          <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="5^:)mb(`I@vi0^@*kKnO">
+                          <field name="TEXT">%</field>
+                        </block>
+                      </value>
                     </block>
                   </value>
                   <value name="ID">
-                    <block type="text" id="P+BTtF!xpLvM`_[Jh[PP">
-                      <field name="TEXT">preloader_bar</field>
+                    <shadow type="text" id="{7V1V(H+z1sJRL=EZ0-|">
+                      <field name="TEXT"></field>
+                    </shadow>
+                    <block type="text" id=".;@j+ZAzme*FkXPFZTw1">
+                      <field name="TEXT">internal-loading-value</field>
                     </block>
                   </value>
-                  <next>
-                    <block type="setHTMLElemAttribute" id="X2cD8!J4?Zm{D)pauR2d">
-                      <field name="ATTRIBUTE">innerHTML</field>
-                      <field name="PARENT">FALSE</field>
-                      <value name="VALUE">
-                        <block type="text_join" id="_k;oj$q9bt?@LbEhoR/4">
-                          <mutation items="3"></mutation>
-                          <value name="ADD1">
-                            <block type="variables_get" id="eO^TmR|{j9z:}O{}1u!,">
-                              <field name="VAR" id="b8W7R[T`[a,_*Xp0s#n;">percentage</field>
-                            </block>
-                          </value>
-                          <value name="ADD2">
-                            <block type="text" id="5^:)mb(`I@vi0^@*kKnO">
-                              <field name="TEXT">%</field>
-                            </block>
-                          </value>
-                        </block>
-                      </value>
-                      <value name="ID">
-                        <shadow type="text" id="{7V1V(H+z1sJRL=EZ0-|">
-                          <field name="TEXT"></field>
-                        </shadow>
-                        <block type="text" id=".;@j+ZAzme*FkXPFZTw1">
-                          <field name="TEXT">internal-loading-value</field>
-                        </block>
-                      </value>
-                    </block>
-                  </next>
                 </block>
               </next>
             </block>
