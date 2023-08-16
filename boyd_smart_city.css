@@ -510,7 +510,7 @@ background-color: transparent;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .instructions_text_wrapper_mobile{
@@ -551,7 +551,7 @@ background-color: transparent;
 }
 
 .modal-text-mobile {
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 0.5rem;
   /* height: 65%; */
 }
