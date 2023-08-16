@@ -551,9 +551,20 @@ background-color: transparent;
 }
 
 .modal-text-mobile {
-  font-size: 2vw;
   padding: 0.5rem;
-  /* height: 65%; */
+  /* Default font size for screens larger than 834px */
+}
+
+@media only screen and (max-width: 479px) {
+  .modal-text-mobile {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 834px) {
+  .modal-text-mobile {
+    font-size: 2vw;
+  }
 }
 
 .modal-close-btn-desktop, .modal-close-btn-mobile {
