@@ -510,7 +510,7 @@ background-color: transparent;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  overflow: auto;
+  overflow: none;
 }
 
 .instructions_text_wrapper_mobile{
@@ -591,6 +591,10 @@ background-color: transparent;
   text-decoration: none;
   margin-right: 1.5rem;
   /* margin-bottom: 1rem; */
+}
+
+.close-button-mobile {
+  height: 32px;
 }
 
 /* Help button */
